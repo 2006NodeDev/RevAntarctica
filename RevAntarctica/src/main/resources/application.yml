@@ -1,0 +1,18 @@
+server:
+  port: 2006
+
+spring:
+  application:    
+    name: rev-antarctica
+  datasource:    
+    driver-class-name: org.h2.Driver
+    initialization-mode: never
+    username: sa
+    password: password
+    url: jdbc:h2:mem:testdb
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    generate-ddl: true
+    hibernate:      
+      ddl-auto: create
+    show-sql: true
